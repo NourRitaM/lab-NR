@@ -17,7 +17,18 @@
         I like challenging myself and improving my programming skills step by step.</p>
 
     </main>
-   
+    <h2>Contact Form:</h2>
+     <form action="/submit" method="post">
+        <label for ="name">Name:</label>
+        <input type="text" id="name" name="name" required>  <! on utilise id pour le css et javascript et name pour le php et le serveur pour recuperer les informations saisies par l'utilisateur>
+        
+        <label for="email">Email:</label>
+        <input type="email" id ="email" name="email"  required>
+      
+        <label for="Message"> Message:</label>
+        <textarea id="Message" name="Message" required></textarea> <! quand on met input ou textarea? on met input pour les champs de saisie et textarea pour les champs de saisie plus grand comme le message>
+        <button type="submit">Submit</button>
+    </form>
     
    
 </body>
