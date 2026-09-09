@@ -1,0 +1,120 @@
+body{
+    background-color: rgb(241, 225, 205);
+}
+.nav{
+    text-align: center;/* i want to put home , about and contact in the center so i first center the parent , .nav */
+}
+.nav a{
+    text-decoration: underline;
+    color: rgb(59, 6, 87);
+    font-family: 'times new roman', serif;
+    font-size: 2rem; /* putting the font size as 1.5rem so that it's not too small but not too big / it's appropriate for my web page */
+    margin:10px;
+    padding: 10px; /* i want to put space between all the element in nav a ( home , contact,about) so i set a padding to have the approopriate space amount that i want since the padding */
+
+}
+
+.text h1 {
+    color : rgb(50, 7, 105);
+    text-align: center;
+    font-family: 'Georgia', serif;
+    font-size: 2.4rem;
+    font-weight: 800;
+    padding-left: 10px;
+    margin: 10px auto; /*the auto share the space left in equal space: 10px en haut et en bas, et auto à gauche et à droite. */
+    margin-top: 50px; /* so that the about me isn't diirectly after the home , contact... , to have alittle space between them */
+}
+
+#my-photo {
+    width: 40%;
+    height:30%;
+    border: 5px solid rgb(11, 11, 11);
+     display: block;
+    margin: 20px auto;  /* so that i can put my photo in the center of my webpage */
+    /*20px en haut et en bas, et auto à gauche et à droite.*/
+     
+   
+}
+
+.text p  {
+    font-family: 'Arial', serif; /* this text font is tthe best for paragraph and text because it's the one preferable for people with dyslexia or reading diisorder so putting the text font to Arial is better so that anyone can read it without problem */
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin: 10px;
+    text-align: center;
+}
+
+.text .p1 {
+    font-family: 'Gill Sans MT', serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    margin: 10px;
+    text-align: center;
+    font-weight: 800;
+    text-decoration-line: underline;
+    text-decoration-color: rgb(8, 8, 75);
+}
+.text .p2{
+    font-family: 'Arial', serif; 
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin: 10px;
+    text-align: center;
+
+}
+
+.text ul {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin: 10px auto;
+    font-style: italic;
+    font-family:  'Gill Sans MT', sans-serif;
+    border-style: dashed;
+    border-color: rgb(9, 91, 113);
+    padding-left: 30px;
+    display: block;
+    width:fit-content;/* the border box dashed created won't take the whole sceen with the wirtting in it , it will just take the text nothing more */
+    
+}
+
+.text .sous-titre {
+    font-family:'Georgia', serif;  /* changing the sub title are making a difference between the main tiltle ABOUT ME and the others one */
+    font-size: 1.7rem;
+    color: rgb(57, 111, 132);/* in order to stay in that blue / beige tone and make everything pop a little more */
+     text-align: center;
+}
+#name{
+    font-family:'Georgia', serif;  /* changing the sub title are making a difference between the main tiltle ABOUT ME and the others one */
+    font-size: 1.7rem;
+    color: rgb(27, 51, 60);/* change the color of the text inside the box */
+    border-color: rgb(11, 11, 46);
+    border-style: dashed;
+   background-color: rgb(192, 224, 244);
+     text-align: center;
+     margin-bottom: 20px;
+}
+#email{
+    font-family:'Georgia', serif;  /* changing the sub title are making a difference between the main tiltle ABOUT ME and the others one */
+    font-size: 1.7rem;
+    color: rgb(27, 51, 60);/* change the color of the text inside the box */
+    border-color: rgb(11, 11, 46);
+    border-style: dashed;
+    background-color: rgb(192, 224, 244);
+     text-align: center;
+    
+     margin-bottom: 20px;
+}
+
+#Message{
+    font-family:'Georgia', serif;  /* changing the sub title are making a difference between the main tiltle ABOUT ME and the others one */
+    font-size: 1.7rem;
+    color: rgb(27, 51, 60);/* change the color of the text inside the box */
+    border-color: rgb(11, 11, 46);
+    border-style: dashed;
+    background-color: rgb(192, 224, 244);
+     text-align: center;
+    
+     margin-bottom: 20px;
+}
+
+
