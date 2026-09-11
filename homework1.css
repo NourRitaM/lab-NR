@@ -4,117 +4,185 @@ body{
 .nav{
     text-align: center;/* i want to put home , about and contact in the center so i first center the parent , .nav */
 }
-.nav a{
-    text-decoration: underline;
-    color: rgb(59, 6, 87);
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     font-family: 'times new roman', serif;
-    font-size: 2rem; /* putting the font size as 1.5rem so that it's not too small but not too big / it's appropriate for my web page */
-    margin:10px;
-    padding: 10px; /* i want to put space between all the element in nav a ( home , contact,about) so i set a padding to have the approopriate space amount that i want since the padding */
+    font-size: 2rem;
+    flex-direction: row;
+    color: rgb(4, 42, 60);
+    background-color: rgb(246, 217, 180);
+    text-align: center;
+   
 
+}
+.navbar p {
+    margin: 0; /* so that the text : my web page is aligne with the home, contact and about and the rectangle of the nav bar won't be too big just enough to conver the text present*/
+}
+.nav-links{
+    display: flex;
+    gap: 20px; /*so that it put space between the element , a gap between them */
+    text-decoration: underline;
+    color: rgb(4, 42, 60);
+    font-family: 'times new roman', serif;
+    
+    font-size: 1.5rem; /* putting the font size as 1.5rem so that it's not too small but not too big / it's appropriate for my web page */
+}
+.nav-links a:visited {  /*pour faire en sorte que si je visite lle site ca ne va pas me monttre que je l'ai visiter mais va rester la couleur que je veux*/
+    color: rgb(4, 42, 60);
 }
 
 .text h1 {
-    color : rgb(50, 7, 105);
+    color : rgb(4, 42, 60);
     text-align: center;
     font-family: 'Georgia', serif;
-    font-size: 2.4rem;
+    font-size: 3rem;
     font-weight: 800;
     padding-left: 10px;
     margin: 10px auto; /*the auto share the space left in equal space: 10px en haut et en bas, et auto à gauche et à droite. */
     margin-top: 50px; /* so that the about me isn't diirectly after the home , contact... , to have alittle space between them */
+    margin-bottom:20px;
 }
 
 #my-photo {
-    width: 40%;
-    height:30%;
-    border: 5px solid rgb(11, 11, 11);
+    width: 390px;
+    height:250px;
+    border: 4px groove rgb(11, 11, 11);
      display: block;
     margin: 20px auto;  /* so that i can put my photo in the center of my webpage */
     /*20px en haut et en bas, et auto à gauche et à droite.*/
      
    
 }
-
+.text .container {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;/* pour eloigner les 2 boxe // avoir un espace entre les 2 box */
+    color: rgb(57, 111, 132);/* in order to stay in that blue / beige tone and make everything pop a little more */
+    
+}
+.text .box{
+    width: 50%;
+    text-align: center;
+    padding: 10px; /* combein je veux que le texte soit loin de la bordure */
+   
+    font-size: 1.7rem; 
+    font-family:'Georgia', serif;  /* changing the sub title are making a difference between the main tiltle ABOUT ME and the others one */
+    
+   
+}
+.text h2{
+    font-family: 'Arial', serif; 
+    font-size: 2rem;
+    text-decoration-line: underline;
+    text-decoration-style:solid;
+    text-decoration-color: black;
+}
 .text p  {
     font-family: 'Arial', serif; /* this text font is tthe best for paragraph and text because it's the one preferable for people with dyslexia or reading diisorder so putting the text font to Arial is better so that anyone can read it without problem */
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     line-height: 1.5;
     margin: 10px;
     text-align: center;
+    color: black;
+    margin-bottom:20px;
+    
+    
 }
 
 .text .p1 {
     font-family: 'Gill Sans MT', serif;
     font-size: 1.6rem;
     line-height: 1.5;
-    margin: 10px;
     text-align: center;
     font-weight: 800;
     text-decoration-line: underline;
     text-decoration-color: rgb(8, 8, 75);
 }
-.text .p2{
-    font-family: 'Arial', serif; 
-    font-size: 1.5rem;
-    line-height: 1.5;
-    margin: 10px;
-    text-align: center;
 
-}
 
 .text ul {
     font-size: 1.5rem;
     line-height: 1.5;
-    margin: 10px auto;
+    color: black;
+    margin: 10px auto; /* wiithout the auto the bullet point won't be in the center of tthe box but at the left*/
     font-style: italic;
     font-family:  'Gill Sans MT', sans-serif;
-    border-style: dashed;
-    border-color: rgb(9, 91, 113);
-    padding-left: 30px;
-    display: block;
-    width:fit-content;/* the border box dashed created won't take the whole sceen with the wirtting in it , it will just take the text nothing more */
+     padding-left: 30px;
+    width:fit-content;/* the border box dashed created won't take the whole sceen with the wirtting in it , it will just take the text nothing more, the bullet point won't just stay now on the left but will now follow the text and be like them in the center */
     
 }
 
-.text .sous-titre {
-    font-family:'Georgia', serif;  /* changing the sub title are making a difference between the main tiltle ABOUT ME and the others one */
-    font-size: 1.7rem;
-    color: rgb(57, 111, 132);/* in order to stay in that blue / beige tone and make everything pop a little more */
-     text-align: center;
+
+.text .contact{
+    display:flex;
+    justify-content: space-around;
+    gap:30px;
+    margin-top: 50px;
+     /* changing the sub title are making a difference between the main tiltle ABOUT ME and the others one */
+
 }
-#name{
-    font-family:'Georgia', serif;  /* changing the sub title are making a difference between the main tiltle ABOUT ME and the others one */
-    font-size: 1.7rem;
-    color: rgb(27, 51, 60);/* change the color of the text inside the box */
-    border-color: rgb(11, 11, 46);
-    border-style: dashed;
-   background-color: rgb(192, 224, 244);
-     text-align: center;
-     margin-bottom: 20px;
-}
-#email{
-    font-family:'Georgia', serif;  /* changing the sub title are making a difference between the main tiltle ABOUT ME and the others one */
-    font-size: 1.7rem;
-    color: rgb(27, 51, 60);/* change the color of the text inside the box */
-    border-color: rgb(11, 11, 46);
-    border-style: dashed;
-    background-color: rgb(192, 224, 244);
-     text-align: center;
+.text .Form{
+    width: 50%;
+    text-align: center;
+    padding: 10px; /* combein je veux que le texte soit loin de la bordure */
+    font-family:'Gill Sans MT', serif; 
+     color: rgb(57, 111, 132);
+    font-size: 1.7rem; 
     
-     margin-bottom: 20px;
+  
+    
 }
 
-#Message{
-    font-family:'Georgia', serif;  /* changing the sub title are making a difference between the main tiltle ABOUT ME and the others one */
-    font-size: 1.7rem;
+#name , #email, #message{  /* instead of wirtting 3 time the same thing i do that to have all of them the same design */
+    font-family:'Arial', serif; 
+    font-size: 1.4rem;
     color: rgb(27, 51, 60);/* change the color of the text inside the box */
-    border-color: rgb(11, 11, 46);
-    border-style: dashed;
-    background-color: rgb(192, 224, 244);
+    border-color:4px rgb(11, 11, 46);
+    border-style: solid;
+   background-color: rgb(229, 233, 235);
      text-align: center;
-    
      margin-bottom: 20px;
 }
 
 
+label{
+    
+    font-family:'Georgia', serif;  
+    color: rgb(17, 70, 94);/* change the color of the text inside the box */
+     text-align: center;
+     margin-bottom: 20px;
+     
+}
+
+#submit{
+    border-radius: 10%;  /* to make the button rounder*/
+    border-color:rgb(67, 60, 51);
+    font-size:1.5rem;
+    font-family: "Gill Sans MT", serif;
+    background-color: rgb(191, 210, 217);
+}
+.mylinks{
+     display: flex;
+     justify-content: space-around;
+     gap: 30px;
+     margin-top:20px;
+}
+.social-link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+#logo{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.foot{
+    font-size:1.3rem;
+    font-family: "Gill Sans MT", serif;
+    color: rgb(4, 42, 60);
+}
