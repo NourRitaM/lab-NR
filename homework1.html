@@ -1,102 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="homework1.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!--  we put this meta so that the web page we create can fit on anydevice with a zoom scale of 100% -->
-    <title>About Me</title>  
-    
-</head>
-<body>
-    <main>
-    <div class="navbar">
-        <p> my web page</p> <!-- on met un div pour creer une barre de navigation pour que l'utilisateur puisse naviguer facilement entre les pages web -->
-        <div class="nav-links">
-          <a href="homework1.html">Home |</a> <!-- on met un lien pour revenir a la Home d'accueil -->
-            <a href="homework1.html">Contact |</a> 
-            <a href="homework1.html">About</a> 
-            <!-- main : bio containing info about me and what i like, i put them in the main so that anyone can know that this is the main content of the page -->
-        </div>
+    <head>
+        <link rel="stylesheet" href="homework1.css">
+        <link rel= "icon" type ="image" href="photo\ChatGPT Image Sep 11, 2026, 11_02_39 PM.png" > <!-- putting the rel with the link too add the logo that i want in the navigtor bar to like that have a logo-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!--  we put this meta so that the web page we create can fit on anydevice with a zoom scale of 100% -->
+        <title>About Me</title>  
         
-    </div> 
-        <div class="text">
-                    <h1>About Me</h1> <!-- on met h1 pour le titre de la page web  il est mit en gras et h2 pour les sous titres-->
+        
+    </head>
+    <body>
+        <main>
+            <header>
+                <div class="navbar">
+                        <img src="photo\ChatGPT Image Sep 11, 2026, 11_02_39 PM.png" alt="my logo" id="logo">
+                        <!-- on met un div pour creer une barre de navigation pour que l'utilisateur puisse naviguer facilement entre les pages web -->
+                        <div class="nav-links">
+                            <nav>
+                                <a href="homework1.html">Home |</a> <!-- on met un lien pour revenir a la Home d'accueil -->
+                                <a href="homework1.html">Contact |</a> 
+                                <a href="homework1.html">About</a> 
+                                <!-- main : bio containing info about me and what i like, i put them in the main so that anyone can know that this is the main content of the page -->
+                            </nav>
+                        </div>
+            
+                    </div> 
+            </header>
+    
+            <div class="text">
+                <h1>About Me</h1> <!-- on met h1 pour le titre de la page web  il est mit en gras et h2 pour les sous titres-->
                 <p>My name is: <p>
-                    <p class="p1">Nour Rita Mokbel.</p>
+                <p class="p1">Nour Rita Mokbel.</p>
 
                 <div class="photo-container"> <!-- on met un div pour creer un conteneur pour la photo pour pouvoir la manipuler avec le css -->             
                     <img src ="photo\a5135946da63c1d3c54a70990f81850e_0.jpg" alt="a photo of me :Nour Rita Mokbel" id="my-photo"> <!-- on met un id pour pouvoir le manipuler avec le css -->
                 </div>
                 <p>I am a Software Engineering student at the University of Saint Joseph (USJ), with a strong interest in software development and emerging technologies. 
-                    I am passionate about building practical and innovative solutions while continuously strengthening my technical and problem-solving skills.
-                    My interests include software engineering, artificial intelligence, data structures and algorithms, and game development. 
-                    I am always eager to take on new challenges, learn new technologies, and grow as a future software engineer.</p>
+                        I am passionate about building practical and innovative solutions while continuously strengthening my technical and problem-solving skills.
+                        My interests include software engineering, artificial intelligence, data structures and algorithms, and game development. 
+                        I am always eager to take on new challenges, learn new technologies, and grow as a future software engineer.</p>
                 <div class="container">  <!-- we have to separate the class so that it can show the webpage with box-->
-                    <div class ="box"> <!-- if we put class container in the h2 and the class box in the p it won't work we have to put div so that the display that will appear is lke what we want -->
-                        <h2> A little More:</h2>
-                        <p>Outside of software engineering, I enjoy game development, exploring new technologies, reading, and continuously learning new things.</p>
-                    </div>
-                    <div class ="box">
-                            <h2>My Skills:</h2>
-                            <p> I have experience in:</p>
-                            <! ul c'est diminutif pour unorder list donc il creer des list generalement avec des bullet point , quand a li c'est pour creer les element que je souhaite afficher dans la liste donc chaque li est un element de la liste>
-                            <ul>
-                                <li>C++</li>
-                                <li>Python</li>
-                                <li>HTML/CSS</li>
-                                <li>Arduino</li>
-                                <li>Git</li>
-                            </ul>
-                    </div> 
+                        <div class ="box"> <!-- if we put class container in the h2 and the class box in the p it won't work we have to put div so that the display that will appear is lke what we want -->
+                            <h2> A little More:</h2>
+                            <p>Outside of software engineering, I enjoy game development, exploring new technologies, reading, and continuously learning new things.</p>
+                        </div>
+                        <div class ="box">
+                                <h2>My Skills:</h2>
+                                <p> I have experience in:</p>
+                                <! ul c'est diminutif pour unorder list donc il creer des list generalement avec des bullet point , quand a li c'est pour creer les element que je souhaite afficher dans la liste donc chaque li est un element de la liste>
+                                <ul>
+                                    <li>C++</li>
+                                    <li>Python</li>
+                                    <li>HTML/CSS</li>
+                                    <li>Arduino</li>
+                                    <li>Git</li>
+                                </ul>
+                        </div> 
+                
+                </div>
+        
             
-                </div>
-       
-        
-                
-                
-        <div class="contact">
-                <div class="Form">
-                    <h2>Contact Form:</h2>
-                    <form action="/submit" method="post">
-                        <label for ="name">Name:</label>
                     
-                        <input type="text" id="name" name="name" required>  <!-- on utilise id pour le css et javascript et name pour le php et le serveur pour recuperer les informations saisies par l'utilisateur -->
-                        <br> <!-- pour retourner a la ligne je met br-->
-                        <label for="email">Email:</label>
-                 
-                        <input type="email" id ="email" name="email"  required>
-                        <br>
-                        <label for="Message"> Message:</label>
-                  
-                        <textarea id="message" name="Message" required></textarea> <!-- quand on met input ou textarea? on met input pour les champs de saisie et textarea pour les champs de saisie plus grand comme le message -->
-                        <br>
-                        <button type="submit" id ="submit">Submit</button>
-                    </form>
+                    
+            <div class="contact">
+                    <div class="Form">
+                        <h2>Contact Form:</h2>
+                        <form action="/submit" method="post">
+                            <label for ="name">Name:</label>
+                        
+                            <input type="text" id="name" name="name" required>  <!-- on utilise id pour le css et javascript et name pour le php et le serveur pour recuperer les informations saisies par l'utilisateur -->
+                            <br> <!-- pour retourner a la ligne je met br-->
+                            <label for="email">Email:</label>
+                    
+                            <input type="email" id ="email" name="email"  required>
+                            <br>
+                            <label for="Message"> Message:</label>
+                    
+                            <textarea id="message" name="Message" required></textarea> <!-- quand on met input ou textarea? on met input pour les champs de saisie et textarea pour les champs de saisie plus grand comme le message -->
+                            <br>
+                            <button type="submit" id ="submit">Submit</button>
+                        </form>
+                    </div>
+            </div>
+            
+        </div>
+            <!-- pour creer des link contenat des infos que je veux mettre-->
+            <div class ="mylinks">
+                <div class="social-link">
+                    <a href="https://github.com/NourRitaM/lab-NR" target="_blank"> <!-- doing like that so that the image that i select not only show th logo of github or of linkdeIn but is also a link that will redirect me to the site -->
+                    <img src="photo\0910dd2adeb4e5debfad67cf24d8e818.png" alt="My Github Profile" id="logo">
+                    </a>
                 </div>
+                <div class="social-link">
+                    <a href="https://www.linkedin.com/in/nour-rita-mokbel-b422b7349/" target="_blank">
+                        <img src="photo\eec7163a65d44b91fff464b66e1d2fce.png" alt=" My LinkedIn Profile" id="logo">
+                    </a>
+                </div>
+            </div>
+        </main>
+        <div class="foot">
+            <footer>
+                <p>©2026 About Me /// Contact: nourrita.mokbel@net.usj.edu.lb</p>
+            </footer>
         </div>
         
-      </div>
-        <!-- pour creer des link contenat des infos que je veux mettre-->
-        <div class ="mylinks">
-            <div class="social-link">
-                <a href="https://github.com/NourRitaM/lab-NR" target="_blank"> <!-- doing like that so that the image that i select not only show th logo of github or of linkdeIn but is also a link that will redirect me to the site -->
-                 <img src="photo\0910dd2adeb4e5debfad67cf24d8e818.png" alt="My Github Profile" id="logo">
-                </a>
-            </div>
-            <div class="social-link">
-                <a href="https://www.linkedin.com/in/nour-rita-mokbel-b422b7349/" target="_blank">
-                    <img src="photo\eec7163a65d44b91fff464b66e1d2fce.png" alt=" My LinkedIn Profile" id="logo">
-                </a>
-            </div>
-        </div>
-    </main>
-    <div class="foot">
-        <footer>
-            <p>©2026 About Me /// Contact: nourrita.mokbel@net.usj.edu.lb</p>
-        </footer>
-    </div>
     
-   
-</body>
+    </body>
 
 </html>
