@@ -1,9 +1,7 @@
 body{
     background-color: rgb(241, 225, 205);
 }
-.nav{
-    text-align: center;/* i want to put home , about and contact in the center so i first center the parent , .nav */
-}
+
 .navbar{
     display: flex;
     justify-content: space-between;
@@ -14,21 +12,24 @@ body{
     color: rgb(4, 42, 60);
     background-color: rgb(246, 217, 180);
     text-align: center;
+    
    
 
 }
-.navbar p {
-    margin: 0; /* so that the text : my web page is aligne with the home, contact and about and the rectangle of the nav bar won't be too big just enough to conver the text present*/
-}
+
 .nav-links{
     display: flex;
-    gap: 20px; /*so that it put space between the element , a gap between them */
+    
     text-decoration: underline;
     color: rgb(4, 42, 60);
     font-family: 'times new roman', serif;
     
     font-size: 1.5rem; /* putting the font size as 1.5rem so that it's not too small but not too big / it's appropriate for my web page */
 }
+.nav-links nav{
+     display: flex;
+    gap: 20px;
+}   /* to have space between home contact and about , not to be glued with one another */
 .nav-links a:visited {  /*pour faire en sorte que si je visite lle site ca ne va pas me monttre que je l'ai visiter mais va rester la couleur que je veux*/
     color: rgb(4, 42, 60);
 }
@@ -139,11 +140,10 @@ body{
     font-family:'Arial', serif; 
     font-size: 1.4rem;
     color: rgb(27, 51, 60);/* change the color of the text inside the box */
-    border-color:4px rgb(11, 11, 46);
-    border-style: solid;
-   background-color: rgb(229, 233, 235);
-     text-align: center;
-     margin-bottom: 20px;
+    border:4px solid rgb(11, 11, 46);
+    background-color: rgb(229, 233, 235);
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 
@@ -151,8 +151,8 @@ label{
     
     font-family:'Georgia', serif;  
     color: rgb(17, 70, 94);/* change the color of the text inside the box */
-     text-align: center;
-     margin-bottom: 20px;
+    text-align: center;
+    margin-bottom: 20px;
      
 }
 
@@ -175,7 +175,7 @@ label{
     align-items: center;
     gap: 10px;
 }
-#logo{
+#logo_1, #logo_2 , #logo_3{
     width: 100px;
     height: 100px;
     object-fit: contain;
