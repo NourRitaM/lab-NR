@@ -1,12 +1,12 @@
 body{
-    background-color: rgb(241, 225, 205);
+    background-color: rgb(241, 225, 205);  /* to choose the backgoorud color of the website */
 }
 
-.navbar{
+.navbar{  /* for the menu/ navigation baar at the top of my website with nav-links */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-family: 'times new roman', serif;
+    font-family: 'Georgia', serif;
     font-size: 2rem;
     flex-direction: row;
     color: rgb(4, 42, 60);
@@ -18,22 +18,26 @@ body{
 }
 
 .nav-links{
-    display: flex;
-    
+  
     text-decoration: underline;
     color: rgb(4, 42, 60);
-    font-family: 'times new roman', serif;
-    
+    font-family: 'Georgia', serif;
     font-size: 1.5rem; /* putting the font size as 1.5rem so that it's not too small but not too big / it's appropriate for my web page */
 }
 .nav-links nav{
      display: flex;
     gap: 20px;
 }   /* to have space between home contact and about , not to be glued with one another */
-.nav-links a:visited {  /*pour faire en sorte que si je visite lle site ca ne va pas me monttre que je l'ai visiter mais va rester la couleur que je veux*/
+.nav-links a:visited {  /* so that the site that i vist stay the color that i choose instead of the default purple color */
     color: rgb(4, 42, 60);
 }
 
+#hero{
+   
+    border: 4px dashed  rgb(4, 42, 60);
+    margin-top: 30px;
+    padding: 20px;
+}
 .text h1 {
     color : rgb(4, 42, 60);
     text-align: center;
@@ -47,8 +51,9 @@ body{
 }
 
 #my-photo {
-    width: 390px;
-    height:250px;
+    width: 100%;
+    max-width: 390px;
+    height: auto;  /* to adapt for all type of screen*/
     border: 4px groove rgb(11, 11, 11);
      display: block;
     margin: 20px auto;  /* so that i can put my photo in the center of my webpage */
@@ -58,27 +63,37 @@ body{
 }
 .text .container {
     display: flex;
-    justify-content: space-around;
-    gap: 30px;/* pour eloigner les 2 boxe // avoir un espace entre les 2 box */
+    justify-content: center;
+    gap: 30px;/* to space the 2 boxes/ have space between them we put gap*/
     color: rgb(57, 111, 132);/* in order to stay in that blue / beige tone and make everything pop a little more */
     
 }
+
+.text .container section {  /* because we are using section so that we have the a little more about me and skills as box one beside the other not under the other */
+/* the parent container now uses a flex row and the two child boxes each take about half the width.*/
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+}
+
 .text .box{
     width: 50%;
     text-align: center;
-    padding: 10px; /* combein je veux que le texte soit loin de la bordure */
-   
+    padding: 10px; /* i want the border to be far of the text for 10 px */
     font-size: 1.7rem; 
     font-family:'Georgia', serif;  /* changing the sub title are making a difference between the main tiltle ABOUT ME and the others one */
-    
-   
 }
+
+
 .text h2{
     font-family: 'Arial', serif; 
     font-size: 2rem;
     text-decoration-line: underline;
     text-decoration-style:solid;
     text-decoration-color: black;
+   color: rgb(57, 111, 132);
+   text-align: center;
 }
 .text p  {
     font-family: 'Arial', serif; /* this text font is tthe best for paragraph and text because it's the one preferable for people with dyslexia or reading diisorder so putting the text font to Arial is better so that anyone can read it without problem */
@@ -127,7 +142,7 @@ body{
 .text .Form{
     width: 50%;
     text-align: center;
-    padding: 10px; /* combein je veux que le texte soit loin de la bordure */
+    padding: 10px; 
     font-family:'Gill Sans MT', serif; 
      color: rgb(57, 111, 132);
     font-size: 1.7rem; 
@@ -169,18 +184,19 @@ label{
      gap: 30px;
      margin-top:20px;
 }
-.social-link{
+.social-link{ 
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
 }
-#logo_1, #logo_2 , #logo_3{
+
+#logo_1, #logo_2 , #logo_3{  /* so that the 3 logos that i create have the same size not too big but not too little */ 
     width: 100px;
     height: 100px;
     object-fit: contain;
 }
-
+/* for the footer*/
 .foot{
     font-size:1.3rem;
     font-family: "Gill Sans MT", serif;
